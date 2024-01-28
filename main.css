@@ -2,13 +2,14 @@
 .hat {
     display: flex;
     padding-left:20em;
-    padding-right: 30em;
+    padding-right: 20em;
     justify-content: space-around;
     align-items: center;
     align-content: center;
     font-family: "Montserrat",sans-serif;
     font-style: bold;
-    margin-left: 100px;
+    list-style: none;
+    font-weight: 700;
 }
 .adress {
     display:flex;
@@ -28,5 +29,16 @@
 .tools{
     display: flex;
     margin-left: 3em;
-    
+    flex-direction: row;
+    align-items: end;
+    align-content: end;
+    justify-content: end;
+    column-gap: 10px;
+}
+.har_slider {
+    display: flex;
+    background-color: #F0F0F4;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
 }
