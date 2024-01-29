@@ -34,7 +34,7 @@
     flex-direction: row;
     align-items: end;
     align-content: end;
-    justify-content: end;
+    justify-content: space-between ;
     column-gap: 1em;
 }
 .hat_slider {
@@ -47,4 +47,25 @@
     margin:0;
     background: #F0F0F4;
     justify-content: center;
+    font-weight: 500;
+}
+.hat_slider li {
+    color: black;
+}
+.hat_slider li:after {
+    display:block;
+    content: '';
+    border-bottom: solid 0.3em #019fb6;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+  }
+.hat_slider li:before{
+    position:absolute;
+    bottom:1.2em; left:0;
+    width:100%;
+}
+.hat_slider li:hover:after, .hat_slider li:hover:before { transform: scaleX(1); }
+
+a {
+    color: black;
 }
