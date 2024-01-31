@@ -5,7 +5,7 @@
     justify-content: space-between;
     align-items: center;
     align-content: center;
-    max-width: min-content;
+    max-width: 75rem;
     font-family: "Montserrat",sans-serif;
     font-style: bold;
     list-style: none;
@@ -71,10 +71,15 @@ a {
     color: black;
 }
 
-/*.slider_sale {
-    margin: 0 auto;
-    margin-top: 2em;
-}*/
+.slider_sale {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 3em;
+    margin: 0 auto; 
+    align-items: center;
+    max-width: 75rem;
+    
+}
 .slider_sale.slider {
     display: flex;
     margin: 0 auto;
@@ -123,8 +128,8 @@ a {
 .arrow-left {
     display: block;
     width: 50px;
-    top: 23em;
-    left: 30%;
+    top: 12em;
+    left: 2em;
     position: absolute;
     transform: translate(-50%, -50%);
     cursor: pointer;
@@ -133,8 +138,13 @@ a {
       display: block;
       width: 50px;
       position: absolute;
-      top: 23em;
-      right: 25%;
+      top: 12em;
       transform: translate(-50%, -50%);
       cursor: pointer;
+}
+
+
+.slider_sale.sale {
+    justify-self: flex-end;
+    margin-top: 2em;
 }
