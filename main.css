@@ -41,12 +41,11 @@
     display: flex;
     background-color: #F0F0F4;
     align-items: center;
-    column-gap: 5em;
     width: 100%;
     height: 3em;
     margin:0;
     background: #F0F0F4;
-    justify-content: center;
+    justify-content: space-between;
     font-weight: 500;
 }
 .hat_category li {
@@ -74,22 +73,25 @@ a {
 .slider_sale {
     display: flex;
     justify-content: space-between;
-    column-gap: 3em;
+    column-gap: 0em;
     margin: 0 auto; 
+    margin-top: 3em;
     align-items: center;
     max-width: 75rem;
+    align-items: center;
+    align-content: center;
     
 }
-.slider_sale.slider {
+.slider_sale_slider {
     display: flex;
     margin: 0 auto;
-    margin-top: 2em;
+    margin-left: 0;
+    
     justify-content: center;
     overflow: hidden;
 }
 .slides {
     display: flex;
-    margin-top: 2em;
     justify-content: center;
     position: relative;
 }
@@ -144,7 +146,29 @@ a {
 }
 
 
-.slider_sale.sale {
-    justify-self: flex-end;
-    margin-top: 2em;
+.slider_sale_sale {
+    border: 1px solid #F0F0F4 !important ;
+    width: 17em;
+    height: 25em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sale_topbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+.sale_box_text {
+    margin: 0 auto;
+    width: 6em;
+    height: 2em;
+    font-weight: 600;
+    justify-self: start;
+    align-items: center;
+    align-content: center;
+    background-color: #1C62CD;
+
 }
