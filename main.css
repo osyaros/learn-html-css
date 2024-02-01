@@ -86,7 +86,6 @@ a {
     display: flex;
     margin: 0 auto;
     margin-left: 0;
-    
     justify-content: center;
     overflow: hidden;
 }
@@ -95,29 +94,42 @@ a {
     justify-content: center;
     position: relative;
 }
-.slides input {
+/* .slides input {
     position: absolute;
     bottom: 1em;
     position: absolute;
     visibility: hidden;
     margin-top: 2em;
-}
+} */
 .navigation {
-    position: relative;
-    bottom: 2.1em;
-    left: 50%;
+    position: absolute;
+    bottom: 1.5em;
+    left:27em;
     transform: translateX(-50%);
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
 
+}
+.inputs {
+    position: absolute;
+    bottom: 1.43em;
+    left: 27em;
+    column-gap: 0.7em;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 100px;
+    visibility: hidden;
 }
 .bar {
     width: 11px;
-    border-radius: 30px;
+    border-radius: 50%;
     height: 11px;
     border: 1px solid #fff;
-    margin-left: 5px;
-    margin-right: 5 px;
+    margin-left: 0.4em;
+    margin-right: 0.4em;
     cursor: pointer;
     transition: 0.4s;
     
@@ -162,13 +174,14 @@ a {
     
 }
 .sale_box_text {
-    margin: 0 auto;
+    margin: 0;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
     width: 6em;
     height: 2em;
     font-weight: 600;
-    justify-self: start;
-    align-items: center;
     align-content: center;
     background-color: #1C62CD;
-
 }
